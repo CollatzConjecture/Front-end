@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#">Bookshelf Apps</a>
+    </header>
+    <main>
+        <section class="left">
+            <section class="input-section">
+                <form id="inputBook">
+                    <h3>Masukan Buku Baru</h3>
+                    <div class="input">
+                        <label for="inputBookTitle">Judul</label>
+                        <input id="inputBookTitle" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookAuthor">Penulis</label>
+                        <input id="inputBookAuthor" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookYear">Tahun</label>
+                        <input id="inputBookYear" type="number" required>
+                    </div>
+                    <button id="bookSubmit" type="submit">Masukan List Buku</button>
+                </form>
+            </section>
+
+            <section class="search-section">
+                <h3>Cari Buku</h3>
+                <form id="searchBook">
+                    <label for="searchBookTitle">Judul</label>
+                    <input id="searchBookTitle" type="text" required>
+                    <button id="searchSubmit" type="submit">Cari</button>
+                </form>
+            </section>
+        </section>
+
+        <section class="right">
+            <section class="book-shelf" id="book1">
+                <h3>Belum selesai dibaca</h3>
+                <div class="list-item" id="uncompletedBook"></div>
+            </section>
+
+            <section class="book-shelf" id="book2">
+                <h3>Selesai dibaca</h3>
+                <div class="list-item" id="completedBook"></div>
+            </section>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
